@@ -19,5 +19,5 @@ Fuente de verdad en **git** (append-only = auditoría y versionado gratis).
 
 ## Estado V0
 - `opp-001` (Cinéfilo, formerly QueVeo): Gate 1 · **hold**. Pendiente: customer discovery + resolver form factor.
-- Primer skill extraído: `estrategia-validacion`.
-- Pendiente de extraer (de futuras corridas): Competencia, Build, Seguridad, Métricas, Operaciones, GTM, Adversario, y la capa de máquina (Scout, Triage, portfolio).
+- Skills extraídos: `estrategia-validacion` (dueño Gate 1), `adversario` (transversal a todos los gates) y `competencia-mercado` (insumo Gate 1 / dimensionamiento que audita G4).
+- Pendiente de extraer (de futuras corridas): Build, Seguridad, Métricas, Operaciones, GTM, y la capa de máquina (Scout, Triage, portfolio).

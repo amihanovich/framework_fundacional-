@@ -24,6 +24,14 @@ no en un SaaS.
    valida es, por diseño, más lenta y más neutral que el founder: nunca cierra un gate
    apurada ni sobre base fina, no reconstruye de memoria como si fuera verdad, y calibra
    su confianza a la evidencia (la barra para matar es tan alta como para avanzar).
+7. **El criterio es la oportunidad, no el founder.** El filtro —descubrimiento, triage y
+   todo gate— es el mérito del proyecto en sí: dolor real, wedge defendible, camino probado.
+   Nunca es si encaja con la experiencia del founder. El fit del founder no prioriza ni
+   excluye una idea: ni sesgo hacia su dominio, ni exclusión de él. Si existe una ventaja de
+   ejecución/distribución del founder, se registra **aparte y explícita** (un *unfair
+   advantage* que puede o no existir) e informa solo el *cómo* se atacaría — jamás el *si* la
+   oportunidad es real o pasa un gate. El dominio del founder es contexto, y como tal vive en
+   el state de cada oportunidad, no en el substrate ni en los skills.
 
 ## Layout (por oportunidad)
 ```
