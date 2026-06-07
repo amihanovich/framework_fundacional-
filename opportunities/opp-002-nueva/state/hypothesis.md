@@ -62,7 +62,17 @@ Y el "actuá por mí en cada plataforma" choca con el bloqueo de deep-linking/OS
    bloqueo de deep-linking de las plataformas dueñas del cliente.
 
 ## Gate
-G1 · Problem-Solution Fit — **hold-por-desambiguar**. Qué lo mueve: (a) el founder elige cuál
-de los tres dolores ES opp-002; (b) si no es discovery, customer discovery con el segmento
-correcto (no founder/amigos) sobre la pregunta filosa de fragmentación; (c) cazar el blanco
-de refutación de agregadores e incumbentes.
+G1 · Problem-Solution Fit — **park (provisional, dec-001)**, esperando el call del founder.
+La caza de refutación (competitive-map.md, market-model.md, ev-007..ev-012) volteó el wedge:
+el diferenciador conversacional/dirigido/cross-plataforma ya es feature nativo y gratis de los
+cuatro dueños del OS, el único modelo que paga es B2B (no B2C, probado 2 veces), y la capa de
+acción cross-plataforma está bloqueada estructuralmente. El Adversario dejó el caso para matar
+(dominante) y el de matar-prematuro (más débil, sostiene park-con-carry-forward) en dec-001.
+
+**El founder es dueño del call.** Opciones: park-con-carry-forward · pivot a un job más angosto
+y validable · kill · hold para una sola ronda de customer discovery antes de decidir.
+
+**Carry-forward candidato (si park):** el momento más filoso del founder ("me canso de barrer
+menús, no tengo cómo decir 'de todo esto andá a buscar X'") podría sembrar una oportunidad
+distinta — un job más angosto que NO dependa del playback cross-plataforma bloqueado ni compita
+de frente con las features nativas. Cada uno sería su propio Gate 1 desde cero. No enamorarse.
