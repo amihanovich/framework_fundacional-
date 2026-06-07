@@ -14,7 +14,10 @@ no en un SaaS.
 2. **Objetos de estado versionados, no sobrescritos en silencio.** Cuando la hipótesis
    cambia, la vieja queda en el historial de git con el commit que explica por qué.
 3. **Ningún gate se pasa en silencio.** Cada pasaje de gate registra el argumento más
-   fuerte del Adversario y cómo se respondió. Esos son los dientes.
+   fuerte del Adversario y cómo se respondió. Esos son los dientes. Y donde hay señal
+   genuina, registra también el caso más fuerte del **Campeón** (a favor): el gate se oye en
+   estéreo. Nueve escépticos y cero campeones es una máquina que deriva al verdugo; el
+   objetivo final es **emprender**, no matar ideas prolijo.
 4. **Procedencia en todo.** Fuente + fecha. El `git log` ES la auditoría que el Scale
    stage va a exigir.
 5. **Capacidad genérica ≠ contexto de la compañía.** Los roles (skills) son agnósticos
@@ -66,9 +69,11 @@ El schema es completo y agnóstico de etapa; la *población* es progresiva.
 
 ## decisions.jsonl — un objeto JSON por línea
 ```
-{ "id", "date", "gate_or_decision", "criteria_status", "adversary_strongest", "response", "call", "owner" }
+{ "id", "date", "gate_or_decision", "criteria_status", "adversary_strongest", "champion_strongest", "response", "call", "owner" }
 ```
 - `call`: `advance` | `hold` | `iterate` | `pivot` | `kill`
+- `champion_strongest`: el caso más fuerte **a favor** (rol Campeón). Obligatorio cuando hay
+  señal genuina; opcional si la evidencia no banca ningún bull case (y eso, dicho, ya es señal).
 - Regla: append-only. Todo pasaje de gate genera una línea con `adversary_strongest` no vacío.
 
 ## Gates y exit criteria (del playbook)

@@ -77,9 +77,13 @@ Append-only. Una línea JSON por ítem: `id, date, source, bears_on, sign, stren
 - **Un build no es evidencia de demanda.** Documentación de construcción/deploy con cero sobre usuarios/retención/monetización = la trampa de confundir construir con validar.
 - **Retención > descargas/signups.** Sin producción ni usuarios, el path "avanzar por pull de usuarios" no existe: no lo finjas.
 
-### 6. Pase obligatorio por el Adversario
-Antes de tocar el gate, construí el caso **más fuerte para matar** la oportunidad,
-usando la evidencia acumulada. No el más fácil de descartar: el que más duele.
+### 6. Pase obligatorio por el Adversario Y por el Campeón
+El gate se oye en **estéreo**, no en mono. Antes de tocarlo:
+- Construí (vía [[adversario]]) el caso **más fuerte para matar** — el que más duele.
+- Construí (vía [[campeon]]) el caso **más fuerte para perseguir** — la señal genuina que
+  sobrevive al Adversario, anclada en evidencia.
+Si hay chispa real, el founder decide oyendo las dos voces, no solo la que mata. Nueve
+escépticos y cero campeones es una máquina que deriva al verdugo: este paso es el contrapeso.
 
 ### 7. Evaluar contra Gate 1 y registrar el call
 Los tres criterios:
@@ -87,8 +91,13 @@ Los tres criterios:
 2. ¿La solución ataca el **problema que reveló la validación**, no el que asumiste?
 3. ¿**Señal suficiente** para justificar construir? (sin certeza, pero evidencia cualitativa real)
 
+Cuidado con el reflejo de matar: un **dolor frecuente pero "tolerable"** no es un kill
+automático — varios negocios enormes resolvieron dolores tolerables hasta que un cambio escalón
+los volvió intolerables. Pesá eso con el Campeón antes de bajar el pulgar.
+
 El **founder es dueño del call** (`advance` | `hold` | `iterate` | `pivot` | `kill`).
-Asentalo en `decisions.jsonl` con `adversary_strongest` no vacío y la respuesta del founder.
+Asentalo en `decisions.jsonl` con `adversary_strongest` no vacío, el `champion_strongest`
+cuando hay señal genuina, y la respuesta del founder.
 
 ### 8. Si se mata o parkea: minar el problema subyacente
 La oportunidad muerta no es un fracaso, es el sistema funcionando. Antes de cerrar,
@@ -101,3 +110,5 @@ asoma detrás — eso va a `carry_forward` y puede sembrar una oportunidad nueva
 - Estás tratando el prototipo como prueba.
 - Pasaste el gate sin un `adversary_strongest` real.
 - Estás defendiendo el producto en vez de interrogar el problema.
+- Mataste/parkeaste sin haber corrido el Campeón: dejaste morir una chispa por escepticismo mecánico.
+- Trataste "dolor tolerable" como kill automático sin pesar el cambio escalón que podría volverlo agudo.

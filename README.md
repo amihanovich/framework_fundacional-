@@ -19,5 +19,24 @@ Fuente de verdad en **git** (append-only = auditoría y versionado gratis).
 
 ## Estado V0
 - `opp-001` (Cinéfilo, formerly QueVeo): Gate 1 · **hold**. Pendiente: customer discovery + resolver form factor.
-- Skills extraídos: `estrategia-validacion` (dueño Gate 1), `adversario` (transversal a todos los gates) y `competencia-mercado` (insumo Gate 1 / dimensionamiento que audita G4).
-- Pendiente de extraer (de futuras corridas): Build, Seguridad, Métricas, Operaciones, GTM, y la capa de máquina (Scout, Triage, portfolio).
+- `opp-002` (navegación/gestión conversacional cross-plataforma): Gate 1 · **hold** (dec-002).
+  El wedge quedó refutado por el mapa competitivo; concedida una ronda acotada de discovery con
+  listón de salida pre-comprometido (ver `target-profile.md`).
+
+### Matriz de roles — los 4 gates cerrados
+| Gate | Roles (skills) |
+|------|----------------|
+| Transversal | `adversario` (caso para matar) · `campeon` (caso a favor) — el gate se oye en estéreo |
+| G1 · Problem-Solution Fit | `estrategia-validacion` (dueño) · `competencia-mercado` (insumo) |
+| G2 · Product-Market Fit | `metricas` (dueño PMF) · `build` · `seguridad` (veto a producción) |
+| G3 · Crecimiento repetible | `gtm` · `operaciones` |
+| G4 · Scale | `escala-moat` (dueño) |
+
+Los diez roles son **agnósticos de la compañía** (invariante #5) y juzgan por mérito de la
+oportunidad, no por fit con el founder (invariante #7). Cada `<rol>/SKILL.md` tiene su `.skill`
+instalable al lado. Cómo correr una idea de punta a punta: ver **`COMO-USAR.md`**.
+
+- **Aún NO construido (a propósito, por la regla V0):** la capa de máquina —Scout (escaneo
+  continuo), Triage/scoring, portfolio multi-oportunidad—. Se extrae de corridas reales, no se
+  construye antes. Los roles G2–G4 están escritos pero sin pulir con una corrida real de
+  construcción/escala todavía.

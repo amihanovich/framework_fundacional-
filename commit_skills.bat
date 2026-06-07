@@ -2,7 +2,7 @@
 cd /d "%~dp0"
 echo Guardando cambios del studio en git...
 git add .
-git commit -m "Skills adversario y competencia-mercado; invariante #7 neutralidad founder-fit (STUDIO.md + guards en estrategia-validacion y competencia-mercado)"
+git commit -m "Cierra la matriz: 6 roles G2-G4 + rol Campeon (contrapeso del Adversario, gate en estereo, champion_strongest en STUDIO.md); corrida opp-002; COMO-USAR.md y _template; README actualizado"
 echo.
 echo Pusheando a GitHub...
 git push
