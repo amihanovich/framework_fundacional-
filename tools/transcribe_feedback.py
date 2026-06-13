@@ -19,7 +19,7 @@ Requiere:
   - ANTHROPIC_API_KEY en .env o variable de entorno (para extracción de señales)
 """
 
-import os, sys, json, base64, datetime, subprocess, tempfile, textwrap
+import os, sys, json, base64, datetime, subprocess, tempfile, textwrap, shutil
 import requests
 
 # ── Intentar cargar .env si existe ──────────────────────────────────────────
@@ -27,7 +27,11 @@ def load_dotenv():
     env_path = os.path.join(os.path.dirname(__file__), ".env")
     if not os.path.exists(env_path):
         return
-    with open(env_path) as f:
+    # PowerShell crea archivos UTF-16 con BOM al usar "echo > file"; lo detectamos
+    with open(env_path, "rb") as f:
+        bom = f.read(2)
+    encoding = "utf-16" if bom in (b"\xff\xfe", b"\xfe\xff") else "utf-8-sig"
+    with open(env_path, encoding=encoding) as f:
         for line in f:
             line = line.strip()
             if line and not line.startswith("#") and "=" in line:
@@ -47,8 +51,7 @@ LANGUAGE   = "es-AR"   # cambiar a "es-US" o "en-US" si corresponde
 
 def check_deps():
     for cmd in ["ffmpeg", "ffprobe"]:
-        r = subprocess.run(["which", cmd], capture_output=True)
-        if r.returncode != 0:
+        if shutil.which(cmd) is None:
             sys.exit(f"ERROR: '{cmd}' no encontrado. Instalá ffmpeg primero.")
 
 def get_duration(path):
