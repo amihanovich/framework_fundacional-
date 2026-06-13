@@ -157,7 +157,7 @@ def extract_signals(transcript, source_label, evidence_path):
     """).strip()
 
     msg = client.messages.create(
-        model="claude-opus-4-5",
+        model="claude-sonnet-4-6",
         max_tokens=3000,
         messages=[{"role": "user", "content": prompt}]
     )
@@ -191,7 +191,7 @@ def main():
     check_deps()
 
     state_dir     = os.path.join(opp_path, "state")
-    evidence_path = os.path.join(state_dir, "evidence.jsonl")
+    evidence_path = os.path.join(opp_path, "evidence.jsonl")
     today_str     = datetime.date.today().isoformat()
     transcript_path = os.path.join(opp_path, f"transcript_{today_str}.txt")
 

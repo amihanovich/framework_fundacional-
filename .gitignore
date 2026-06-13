@@ -7,6 +7,12 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Audio temporales
+# Audio — nunca subir grabaciones al repo
+*.aac
+*.mp4
+*.m4a
+*.wav
 *.flac
+
+# Transcripts generados
 transcript_*.txt
