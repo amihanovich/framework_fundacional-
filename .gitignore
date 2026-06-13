@@ -1,0 +1,12 @@
+# Secrets
+tools/.env
+**/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Audio temporales
+*.flac
+transcript_*.txt
