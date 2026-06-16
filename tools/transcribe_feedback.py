@@ -19,7 +19,7 @@ Requiere:
   - ANTHROPIC_API_KEY en .env o variable de entorno (para extracción de señales)
 """
 
-import os, sys, json, base64, datetime, subprocess, tempfile, textwrap
+import os, sys, json, base64, datetime, subprocess, tempfile, textwrap, shutil
 import requests
 
 # ── Intentar cargar .env si existe ──────────────────────────────────────────
@@ -47,8 +47,7 @@ LANGUAGE   = "es-AR"   # cambiar a "es-US" o "en-US" si corresponde
 
 def check_deps():
     for cmd in ["ffmpeg", "ffprobe"]:
-        r = subprocess.run(["which", cmd], capture_output=True)
-        if r.returncode != 0:
+        if shutil.which(cmd) is None:
             sys.exit(f"ERROR: '{cmd}' no encontrado. Instalá ffmpeg primero.")
 
 def get_duration(path):
@@ -88,7 +87,6 @@ def transcribe_chunk(chunk_path):
             "sampleRateHertz": SAMPLE_RATE,
             "languageCode": LANGUAGE,
             "enableAutomaticPunctuation": True,
-            "model": "latest_long",
         },
         "audio": {"content": content}
     }
